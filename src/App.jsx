@@ -238,7 +238,7 @@ export default function App() {
 
   async function exportDocx() {
     try {
-      const response = await fetch("http://localhost:3001/convert-docx", {
+      const response = await fetch("https://kessarismath-production.up.railway.app/convert-docx", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ latex: text }),
