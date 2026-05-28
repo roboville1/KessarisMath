@@ -39,7 +39,3 @@ app.post("/convert-docx", (req, res) => {
 app.listen(3001, () => {
   console.log("Pandoc server running on port 3001")
 })
-
-app.listen(PORT, () => {
-  console.log(`Pandoc server running on port ${PORT}`)
-})
