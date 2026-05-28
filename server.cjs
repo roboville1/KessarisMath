@@ -7,7 +7,7 @@ const { exec } = require("child_process")
 const app = express()
 
 app.use(cors())
-app.options("*", cors())
+app.options("/convert-docx", cors())
 app.use(express.json({ limit: "20mb" }))
 
 const tempDir = path.join(__dirname, "temp")
